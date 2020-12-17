@@ -26,6 +26,9 @@
         contexto.fillStyle = "black";
         contexto.fillRect(0, 0, canvas.width, canvas.height);
 
+        // Atualiza estado
+        x = x + 10*dt;
+
         // Desenha elementos
         contexto.fillStyle = "white";
         contexto.fillRect(x, 150, 20, 20);
