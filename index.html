@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DCC138 Exemplo01</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>DCC138 Exemplo01</h1>
     <canvas></canvas>
     <p>por Delber Soares</p>
     <script>
-        let canvas = document.querySelector("canvas");
-        let contexto = canvas.getContext("2d");
-        canvas.width = 480;
-        canvas.height = 320;
+      let canvas = document.querySelector("canvas");
+      let contexto = canvas.getContext("2d");
+      canvas.width = 480;
+      canvas.height = 320;
+      let x = 250;
+      desenha();
 
+      function desenha() {
+        // Desenha Fundo
         contexto.fillStyle = "black";
-        contexto.fillRect(0,0, canvas.width,canvas.height);
-        
+        contexto.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Desenha elementos
+        contexto.fillStyle = "white";
+        contexto.fillRect(x, 150, 20, 20);
+
+
+      }
     </script>
-</body>
-</html> 
+  </body>
+</html>
